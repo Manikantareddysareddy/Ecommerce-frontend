@@ -11,7 +11,7 @@ const LoginForm = () => {
     const handleLogin = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post('http://localhost:3000/login', { email, password });
+            const response = await axios.post('https://ecommerce-backend-3-lurb.onrender.com/login', { email, password });
             
             if (response.data.token !== undefined) {
                 Cookies.set('authToken', response.data.token, { expires: 4 }); // Store token for 1 day
@@ -62,8 +62,9 @@ const LoginForm = () => {
         <button type="submit" className="login-button">
           Login
         </button>
+               <p className='para'>Don't have account? <Link to="/signup" className='link-El'>SignUp Now</Link></p>
         </form>
-         <p className='para'>Don't have account? <Link to="/signup" className='link-El'>SignUp Now</Link></p>
+        
         </div>
     );
 };
