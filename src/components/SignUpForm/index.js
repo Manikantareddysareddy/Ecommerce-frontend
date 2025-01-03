@@ -12,7 +12,7 @@ const SignUpForm = () => {
     const handleSignup = async (e) => {
         e.preventDefault()
         try {
-            await axios.post('http://localhost:3000/signup', { name, email, password });
+            await axios.post('https://ecommerce-backend-3-lurb.onrender.com/signup', { name, email, password });
             navigate('/login');
         } catch (err) {
             alert("User Already Exists Please Login");
