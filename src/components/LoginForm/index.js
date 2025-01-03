@@ -63,6 +63,7 @@ const LoginForm = () => {
           Login
         </button>
         </form>
+         <p className='para'>Don't have account? <Link to="/signup" className='link-El'>SignUp Now</Link></p>
         </div>
     );
 };
