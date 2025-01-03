@@ -1,0 +1,43 @@
+.product-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.product-image{
+    height: 70vh;
+    width: 40vw;
+}
+.cart-btn{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: #ffffff;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 6px;
+    background-color: #0967d2;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.quantity-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.count-para{
+    font-family: "Roboto";
+    font-size: 18px;
+    margin-right: 10px;
+}
+.plus-btn{
+    height: 5vh;
+    width: 4vw;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 10px;
+}
